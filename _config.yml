@@ -1,3 +1,25 @@
-theme: jekyll-theme-minimal
+name: Idil Sulo
 bio: 'Computer Engineering Student'
 description: Idil's website
+url: 'http://idilsulo.github.io'
+permalink: '/:title/'
+github: idilsulo
+email: idilsulo@gmail.com
+authors:
+  idilsulo:
+    name: Idil Sulo
+    bio: 'Computer Engineering student'
+width: normal
+about: true
+read-time: true
+show-tags: true
+related: true
+show-author: true
+animation: true
+plugins_dir:
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+jekyll-mentions:
+  base_url: 'https://github.com'
