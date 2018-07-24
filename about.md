@@ -1,7 +1,6 @@
 
-# İdil Sülo
-idilsulo [at] gmail.com
+![Profile Image]({{ site.picture }})
 
-I'm a final year Computer Engineering undergraduate at Middle East Technical University.
+I'm İdil, a final year Computer Engineering undergraduate at Middle East Technical University in Ankara, Turkey.
 
 
