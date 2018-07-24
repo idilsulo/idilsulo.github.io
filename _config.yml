@@ -1,14 +1,23 @@
-name: Idil Sulo
+name: İdil Sülo
 bio: 'Computer Engineering Student'
 description: Idil's website
+external-image: true
+picture: 'https://pbs.twimg.com/profile_images/745646155883741184/Ua0T118O_400x400.jpg'
+resume: true
+resume-external: true
+resume-url: >-
+  https://drive.google.com/file/d/1IHDH59TIRp85RyRH_cY7rb4jGZU6k66X/view?usp=sharing
 url: 'http://idilsulo.github.io'
 permalink: '/:title/'
+linkedin: idilsulo
 github: idilsulo
 email: idilsulo@gmail.com
 authors:
   idilsulo:
-    name: Idil Sulo
+    name: İdil Sülo
     bio: 'Computer Engineering student'
+    picture: >-
+      'https://pbs.twimg.com/profile_images/745646155883741184/Ua0T118O_400x400.jpg'
 width: normal
 about: true
 read-time: true
