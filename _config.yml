@@ -20,6 +20,10 @@ authors:
       'https://pbs.twimg.com/profile_images/745646155883741184/Ua0T118O_400x400.jpg'
 width: normal
 about: true
+blog: true
+blog-external: true
+blog-url: >-
+  www.codingwoman.com
 read-time: true
 show-tags: true
 related: true
