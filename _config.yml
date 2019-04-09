@@ -6,7 +6,7 @@ picture: 'https://raw.githubusercontent.com/idilsulo/idilsulo.github.io/master/i
 resume: true
 resume-external: true
 resume-url: >-
-  https://drive.google.com/open?id=10dyFFqY7Xt926AA9jr9Gq7aD88MTGgWc
+  https://drive.google.com/open?id=1qAUmLKFtmyCYb-MeeF0DRMylTuDSfdx7
 url: 'http://idilsulo.github.io'
 permalink: '/:title/'
 linkedin: idilsulo
@@ -17,7 +17,7 @@ authors:
     name: İdil Sülo
     bio: 'Computer Engineering student'
     picture: >-
-      'https://pbs.twimg.com/profile_images/1031096504705064960/L8RyvCie_400x400.jpg'
+      'https://raw.githubusercontent.com/idilsulo/idilsulo.github.io/master/img/photo.png'
 width: normal
 about: true
 read-time: true
