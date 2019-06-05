@@ -4,9 +4,9 @@ description: Idil's website
 external-image: true
 picture: 'https://raw.githubusercontent.com/idilsulo/idilsulo.github.io/master/img/photo.png'
 resume: true
-resume-external: true
+resume-external: false
 resume-url: >-
-  https://drive.google.com/open?id=1xOy19HGYtjzKVmnzpkfRMkGxFpQya8Eh
+  docs/Idil_Sulo_CV.pdf
 url: 'http://idilsulo.github.io'
 permalink: '/:title/'
 linkedin: idilsulo
