@@ -5,10 +5,15 @@ layout: page
 ![Profile Image]({{ site.picture }})
 
 <p>
-I'm İdil, a final year Computer Engineering undergraduate at Middle East Technical University in Ankara, Turkey with an emphasis on Deep Learning and Computer Vision. 
+I'm İdil, a master's student in Informatics at Technical University of Munich with an emphasis on Deep Learning and Computer Vision. I did my bachelor's degree in Computer Engineering at Middle East Technical University in Ankara, Turkey. 
 </p>
+<!--
 <p>
 Last summer, I was a Computer Vision research intern at the Image Lab of Middle East Technical University. I had worked on Generative Adversarial Networks and MobileNets. After that, I took a graduate course named "Deep Learning: Methods and Applications". 
+</p>
+-->
+<p>
+  Here, you can find a list of the research projects that I was involved in so far.
 </p>
 <p>
   
@@ -30,3 +35,12 @@ Last summer, I was a Computer Vision research intern at the Image Lab of Middle 
   This work is supported by the Scientific and Technological Research Council of Turkey (TÜBİTAK) through the scope of the scholorship programme 2209/A University Students Research Project Grant.
   </p>
 
+<h1> Publications </h1>
+  <p>
+Turkey Robotics Conference (TORK 2019) Istanbul, TURKEY AUTHOR June 26-28, 2019 F. C. Kurnaz, B. Hocaoglu, K. M. Yilmaz, I. Sulo, and S. Kalkan. ALET: Gerçek Ortamlarda Aletlerin Tespiti için Veri Kümesi, Baz Sonuçlar ve Bir Uygulama, 2019.
+   </p>
+   <p>
+ The International Conference on Deep Learning and Machine Learning in
+Emerging Applications (DEEP-ML 2019)
+AUTHOR August 26-28, 2019 I. Sulo, S. R. Keskin, G. Dogan, and T. Brown. Energy Efficient Smart Buildings: LSTM Neural Networks for Time Series Prediction, 2019.
+    </p>
