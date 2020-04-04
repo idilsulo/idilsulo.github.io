@@ -5,10 +5,10 @@ layout: page
 ![Profile Image]({{ site.picture }})
 
 <p>
-I'm İdil, a master's student in Informatics department at <a href="https://www.tum.de/en/">Technical University of Munich</a> with an emphasis on Deep Learning and Computer Vision. I did my bachelor's degree in Computer Engineering at Middle East Technical University in Ankara, Turkey.
+I'm İdil, a master's student in Informatics department at <a href="https://www.tum.de/en/" target="_blank" style="text-decoration: none">Technical University of Munich</a> with an emphasis on Deep Learning and Computer Vision. I did my bachelor's degree in Computer Engineering at Middle East Technical University in Ankara, Turkey.
 </p>
 <p>
-  I'm currently working part-time as a Data Scientist at a company named <a href="https://unetiq.com/">Unetiq</a>.
+  I'm currently working part-time as a Data Scientist at a company named <a href="https://unetiq.com/" target="_blank" style="text-decoration: none">Unetiq</a>.
 
 </p>
 <!--
@@ -39,6 +39,9 @@ Last summer, I was a Computer Vision research intern at the Image Lab of Middle 
   <p>
   This work is supported by the Scientific and Technological Research Council of Turkey (TÜBİTAK) through the scope of the scholorship programme 2209/A University Students Research Project Grant.
   </p>
+ <p>
+  
+ </p>
  </br>
 <h1> Publications </h1>
   <p>
