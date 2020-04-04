@@ -22,7 +22,7 @@ Last summer, I was a Computer Vision research intern at the Image Lab of Middle 
 <p>
   
  </p>
- </br>
+ <br>
 <h1> Research Projects </h1>
   <h2> ÇIRAK Project </h2>
   <p>
@@ -42,7 +42,7 @@ Last summer, I was a Computer Vision research intern at the Image Lab of Middle 
  <p>
   
  </p>
- </br>
+ <br>
 <h1> Publications </h1>
   <p>
 Turkey Robotics Conference (TORK 2019) Istanbul, TURKEY AUTHOR June 26-28, 2019 F. C. Kurnaz, B. Hocaoglu, K. M. Yilmaz, I. Sulo, and S. Kalkan. ALET: Gerçek Ortamlarda Aletlerin Tespiti için Veri Kümesi, Baz Sonuçlar ve Bir Uygulama, 2019.
