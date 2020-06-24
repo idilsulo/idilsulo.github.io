@@ -7,10 +7,7 @@ layout: page
 <p>
 I'm İdil, a master's student in computer science department at <a href="https://www.tum.de/en/" target="_blank" style="text-decoration: none">Technical University of Munich</a> with an emphasis on Deep Learning and Computer Vision. I did my bachelor's degree in Computer Engineering at Middle East Technical University in Ankara, Turkey.
 </p>
-<p>
-  I'm currently working part-time as a Data Scientist at a company named <a href="https://unetiq.com/" target="_blank" style="text-decoration: none">Unetiq</a>.
 
-</p>
 <!--
 <p>
 Last summer, I was a Computer Vision research intern at the Image Lab of Middle East Technical University. I had worked on Generative Adversarial Networks and MobileNets. After that, I took a graduate course named "Deep Learning: Methods and Applications". 
