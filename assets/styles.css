@@ -1,0 +1,36 @@
+.bio-wrapper { display: flex;}
+
+.bio-wrapper p { margin-top: 1em; }
+
+@media screen and (max-width:990px) {
+    .bio-wrapper { flex-wrap: wrap;  }
+    .item:first-child { flex-basis: 100%; }
+}
+
+.bio-wrapper img { float: left; width: 280px; height: 250px; margin-right: 2em;}
+
+.content-wrapper { position: relative; margin-top: 3em;}
+
+.publications-wrapper { margin-top: 3em; }
+
+.post-info { position: relative; display: flex; margin-bottom: 2em;}
+
+@media screen and (max-width:990px) {
+    .post-info { flex-wrap: wrap;  }
+    .item:first-child { flex-basis: 100%; }
+}
+
+.post-title p {font-size: small;}
+
+.post-link { float: left; margin-right: 2em; margin-top: 1em;  margin-bottom: 1em; font-size: large;}
+
+.post-info img { float: left; width: 170px; height: 170px; margin-right: 2em;}
+
+.post-info .post-paper { font-size: small;}
+
+.post-place { font-style: italic; }
+
+
+.site-header { border-top: 5px solid #1756a9; }
+
+.footer-horizontal { float: left; margin-top: 1em; font-size: 13px;}
