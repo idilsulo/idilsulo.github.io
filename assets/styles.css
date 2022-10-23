@@ -7,7 +7,9 @@
     .item:first-child { flex-basis: 100%; }
 }
 
-.bio-wrapper img { float: left; width: 280px; height: 250px; margin-right: 2em;}
+.bio-wrapper img { float: left; width: 300px; height: 300px; margin-right: 2em;}
+
+.social-media { position: relative; display: flexbox;}
 
 .content-wrapper { position: relative; margin-top: 3em;}
 
