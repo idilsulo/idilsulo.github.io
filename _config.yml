@@ -1,38 +1,62 @@
-name: İdil Sülo
-bio: 'M.Sc. student in Computer Science'
-description: Idil's personal website
-external-image: true
-picture: 'https://raw.githubusercontent.com/idilsulo/idilsulo.github.io/master/img/photo.png'
-resume: true
-resume-external: false
-resume-url: >-
-  docs/Idil_Sulo_CV_Resume.pdf
-url: 'http://idilsulo.github.io'
-permalink: '/:title/'
-linkedin: idilsulo/en/
-github: idilsulo
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Idil Sülo
 email: idilsulo@gmail.com
-authors:
-  idilsulo:
-    name: İdil Sülo
-    bio: 'M.Sc. student in Computer Science'
-    picture: >-
-      'https://raw.githubusercontent.com/idilsulo/idilsulo.github.io/master/img/photo.png'
-width: normal
-about: true
-read-time: true
-show-tags: true
-related: true
-show-author: true
-animation: true
-plugins_dir:
-  - jekyll-seo-tag
-  - jekyll-gist
+description: >- # this means to ignore newlines until "baseurl:"
+  Hi! I'm Idil, a master's student in Informatics (Computer Science) at <a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a>.
+  I previously obtained my bachelor's in Computer Engineering from <a href="https://ceng.metu.edu.tr/">Middle East Technical University (METU)</a>, Ankara. 
+  My interests include computer vision and deep learning research. I am currently working on a project on self-supervised
+  vehicle control, and an extension of this project using sensor fusion at <a href="https://vision.in.tum.de/">TUM Computer Vision Group</a> under Prof. Cremers.
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: codingwoman
+github_username:  idilsulo
+
+user: Idil Sülo
+picture: https://raw.githubusercontent.com/idilsulo/idilsulo.github.io/master/img/photo.png'
+
+
+# Build settings
+theme: minima
+plugins:
   - jekyll-feed
-  - jemoji
-jekyll-mentions:
-  base_url: 'https://github.com'
-blog: true
-blog-external: true
-blog-url: >-
-  http://www.codingwoman.com/
+
+# minima:
+#   skin: dark
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
