@@ -13,5 +13,5 @@ layout: home
 [Jun. 2021] I am an SDE intern at Amazon, AWS AI-DevOps team from August, 2021 until January, 2022. <br/>
 
 ## On-going Projects 
-* Self-supervised vehicle control based on visual odometry and SLAM methods
-* Fusion of Multi-sensor data for robust vehicle control
+* Self-supervised vehicle control based on visual odometry and view synthesis
+* Fusion of multi-sensor data for robust vehicle control
