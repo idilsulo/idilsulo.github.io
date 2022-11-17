@@ -9,7 +9,7 @@ layout: home
 ## News
 [Sep. 2022] I am attending Grace Hopper Celebration (GHC) virtually between 16-18 September. <br/>
 [Jun. 2022] I am awarded a scholarship by TUM to attend vGHC'22. <br/>
-[Apr. 2022] I am a member of Women in CS @ TUM (IFF) at social media team. <br/>
+[Apr. 2022] I am an organizational member / IFF Officer of Women in CS @ TUM (Informatik-Forum Frauen, IFF) at social media team. <br/>
 [Jun. 2021] I am an SDE intern at Amazon, AWS AI-DevOps team from August, 2021 until January, 2022. <br/>
 
 ## On-going Projects 
