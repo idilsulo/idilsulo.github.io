@@ -38,6 +38,9 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Google Analytics
+google_analytics: G-HD8XMF7G1E
+
 # minima:
 #   skin: dark
 
