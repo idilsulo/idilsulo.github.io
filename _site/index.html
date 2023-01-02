@@ -11,7 +11,7 @@
   </script>
   <script>
       localStorage.setItem('color-theme', 'darkmode');
-  </script>
+  </script>  
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,7 +56,7 @@
   <meta name="theme-color" content="#ffffff">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head><body><script>
-
+  
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
   if (localStorage.getItem('color-theme') === 'darkmode' || (!('color-theme' in localStorage))) {
       document.body.classList.add('darkmode');
