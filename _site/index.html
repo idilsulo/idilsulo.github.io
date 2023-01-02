@@ -9,6 +9,12 @@
 
     gtag('config', ' G-HD8XMF7G1E');
   </script>
+  <script>
+      if (localStorage.getItem('color-theme') === 'darkmode' || (!('color-theme' in localStorage))) {
+        localStorage.setItem('color-theme', 'darkmode');
+      }
+  </script>  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,24 +57,76 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-</head><body><header class="site-header" role="banner">
-
-    <div class="wrapper"><a class="site-title" rel="author" href="/">Idil Sülo</a><nav class="site-nav">
-          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-          <label for="nav-trigger">
-            <span class="menu-icon">
-              <svg viewBox="0 0 18 15" width="18px" height="15px">
-                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-              </svg>
-            </span>
-          </label>
+</head><body><script>
   
-          <div class="trigger">
-            <a class="page-link" href="/">Home</a>
-            <a class="page-link" href="/about/">About</a>
-            <a class="page-link" href="/publications/">Research</a>
-            <a class="page-link" target="_blank" href="http://www.codingwoman.com/">Blog</a></div>
-        </nav></div>
+  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+  if (localStorage.getItem('color-theme') === 'darkmode' || (!('color-theme' in localStorage))) {
+      document.body.classList.add('darkmode');
+  } else {
+      document.body.classList.remove('darkmode');
+  }
+</script>
+
+<script>
+  function darkmodeFunction() {
+
+    // if set via local storage previously
+    if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+            document.body.classList.add('darkmode');
+            localStorage.setItem('color-theme', 'darkmode');
+        } else {
+            document.body.classList.remove('darkmode');
+            localStorage.setItem('color-theme', 'light');
+        }
+
+    // if NOT set via local storage previously
+    } else {
+        if (document.body.classList.contains('darkmode')) {
+            document.body.classList.remove('darkmode');
+            localStorage.setItem('color-theme', 'light');
+        } else {
+            document.body.classList.add('darkmode');
+            localStorage.setItem('color-theme', 'darkmode');
+        }
+    }
+   
+  } 
+
+  window.onload = function() {
+    if (localStorage.getItem('color-theme') === 'darkmode' || (!('color-theme' in localStorage))) {
+        var el = document.getElementById("theme-toggle");
+        el.checked = true;
+        console.log(el.checked);
+    } else {
+        var el = document.getElementById("theme-toggle");
+        el.checked = false;
+        console.log(el.checked);
+    }
+  };
+  
+</script>
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+    <input id="theme-toggle" class="toggle" type="checkbox" onclick="darkmodeFunction()"/>
+    <a class="site-title" rel="author" href="/">Idil Sülo</a>
+    <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/">Home</a>
+          <a class="page-link" href="/about/">About</a>
+          <a class="page-link" href="/publications/">Research</a>
+          <a class="page-link" target="_blank" href="http://www.codingwoman.com/">Blog</a></div>
+      </nav></div>
   </header><main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="bio-wrapper">
@@ -76,7 +134,7 @@
     <p>Hi! I'm Idil, a master's student in Informatics (Computer Science) at <a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a>. I previously obtained my bachelor's in Computer Engineering from <a href="https://ceng.metu.edu.tr/">Middle East Technical University (METU)</a>, Ankara.  My interests include computer vision and deep learning research. I am currently working on a project on self-supervised vehicle control, and an extension of this project using sensor fusion at <a href="https://vision.in.tum.de/">TUM Computer Vision Group</a> under Prof. Cremers. 
         <br/><br/>
         <a href="mailto:idilsulo@gmail.com">Email</a> / 
-        <a href="https://raw.githubusercontent.com/idilsulo/idilsulo.github.io/master/docs/Idil_Sulo_CV_Resume.pdf">CV</a> / 
+        <a href="https://github.com/idilsulo/idilsulo.github.io/raw/master/docs/Idil_Sulo_CV.pdf">CV</a> / 
         <a href="https://github.com/idilsulo">GitHub</a> / 
         <a href="https://www.twitter.com/codingwoman">Twitter</a> / 
         <a href="https://www.linkedin.com/in/idilsulo/en/">LinkedIn</a> / 
@@ -103,7 +161,7 @@
     <h2>Research</h2>
     
         <div class="post-info">
-            <img src="/images/alet.jpeg" alt="" />
+            <img src="/images/alet.png" alt="" />
             <div class="post-title">
                 <a class="post-link" href="/computer-vision/2022/10/23/alet.html">ALET (Automated Labeling of Equipment and Tools): A Dataset for Tool Detection and Human Worker Safety Detection</a>
                 <p> Fatih Can Kurnaz, Burak Hocaoğlu, Mert Kaan Yılmaz, İdil Sülo & Sinan Kalkan </p>
@@ -179,9 +237,9 @@
         </div>
         
         <div class="footer-horizontal">
-          <p>© 2022 Idil Sulo. Powered by Jekyll, adapted from Minima theme. If you would like to use the same template 
+          <p>© 2023 Idil Sulo. Powered by Jekyll, adapted from Minima theme. If you would like to use the same template 
             version you can use <a href="https://github.com/idilsulo/idilsulo.github.io">this source code.</a> Feel free to submit a PR, if you want your webpage linked here.</a></p>
-          <p>Last updated on November 17, 2022.</p>
+          <p>Last updated on January 1, 2023.</p>
       </div>
       </div>
       
