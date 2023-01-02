@@ -4,62 +4,6 @@ body {
     display: flex; min-height: 100vh; flex-direction: column;
 }
 
-
-
-.toggle {
-    margin-top: 12px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 62px;
-    height: 32px;
-    display: inline-block;
-    position: relative;
-    border-radius: 50px;
-    overflow: hidden;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    background-color: #707070;
-    transition: background-color ease 0.3s;
-    float: left;
-  }
-  
-  .toggle:before {
-    content: "🌕 ☀️";
-    display: block;
-    position: absolute;
-    z-index: 2;
-    width: 28px;
-    height: 28px;
-    background: #fff;
-    left: 2px;
-    top: 2px;
-    border-radius: 50%;
-    font: 15px/28px Helvetica;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-indent: -22px;
-    word-spacing: 37px;
-    color: #fff;
-    text-shadow: -1px -1px rgba(0,0,0,0.15);
-    white-space: nowrap;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-    transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
-  }
-  
-  .toggle:checked {
-    background-color: #639f95;
-  }
-  
-  .toggle:checked:before {
-    left: 32px;
-  }
-
-  .site-title { font-size: 26px; font-weight: 300; line-height: 54px; letter-spacing: 0px; margin-bottom: 0; float: left; margin-left: 5px;}
-
-
-
 .bio-wrapper { display: flex;}
 
 .bio-wrapper p { margin-top: 1em; }
@@ -99,6 +43,58 @@ body {
 
 .footer-horizontal { float: left; margin-top: 1em; font-size: 13px;}
 
+/* TOGGLE */
+.toggle {
+    margin-top: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 62px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #707070;
+    transition: background-color ease 0.3s;
+    float: left;
+}
+  
+.toggle:before {
+    content: "🌕 ☀️";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    font: 15px/28px Helvetica;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-indent: -22px;
+    word-spacing: 37px;
+    color: #fff;
+    text-shadow: -1px -1px rgba(0,0,0,0.15);
+    white-space: nowrap;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+  
+.toggle:checked {
+    background-color: #639f95;
+}
+  
+.toggle:checked:before {
+    left: 32px;
+}
+
+.site-title { font-size: 26px; font-weight: 300; line-height: 54px; letter-spacing: 0px; margin-bottom: 0; float: left; margin-left: 5px;}
 
 
 /* DARK MODE */

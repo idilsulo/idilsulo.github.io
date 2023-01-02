@@ -9,6 +9,7 @@
 
     gtag('config', ' G-HD8XMF7G1E');
   </script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,16 +53,60 @@
   <meta name="theme-color" content="#ffffff">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head><body><script>
+  document.body.classList.add('darkmode');
+
+
+  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+  if (localStorage.getItem('color-theme') === 'darkmode' || (!('color-theme' in localStorage))) {
+      document.body.classList.add('darkmode');
+      $("theme-toggle").prop('checked', true);
+  } else {
+      document.body.classList.remove('darkmode');
+  }
+</script>
+
+<script>
   function darkmodeFunction() {
-    var element = document.body;
-    element.classList.toggle("darkmode");
+
+    // if set via local storage previously
+    if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+            document.body.classList.add('darkmode');
+            localStorage.setItem('color-theme', 'darkmode');
+        } else {
+            document.body.classList.remove('darkmode');
+            localStorage.setItem('color-theme', 'light');
+        }
+
+    // if NOT set via local storage previously
+    } else {
+        if (document.body.classList.contains('darkmode')) {
+            document.body.classList.remove('darkmode');
+            localStorage.setItem('color-theme', 'light');
+        } else {
+            document.body.classList.add('darkmode');
+            localStorage.setItem('color-theme', 'darkmode');
+        }
+    }
+   
   } 
 
+  window.onload = function() {
+    if (localStorage.getItem('color-theme') === 'darkmode' || (!('color-theme' in localStorage))) {
+        var el = document.getElementById("theme-toggle");
+        el.checked = true;
+        console.log(el.checked);
+    } else {
+        var el = document.getElementById("theme-toggle");
+        el.checked = false;
+    }
+  };
+  
 </script>
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    <input class="toggle" type="checkbox" onclick="darkmodeFunction()"/>
+    <input id="theme-toggle" class="toggle" type="checkbox" onclick="darkmodeFunction()" checked/>
     <a class="site-title" rel="author" href="/">Idil Sülo</a>
     <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
