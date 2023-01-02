@@ -53,13 +53,10 @@
   <meta name="theme-color" content="#ffffff">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head><body><script>
-  document.body.classList.add('darkmode');
-
-
+  
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
   if (localStorage.getItem('color-theme') === 'darkmode' || (!('color-theme' in localStorage))) {
       document.body.classList.add('darkmode');
-      $("theme-toggle").prop('checked', true);
   } else {
       document.body.classList.remove('darkmode');
   }
@@ -99,6 +96,7 @@
     } else {
         var el = document.getElementById("theme-toggle");
         el.checked = false;
+        console.log(el.checked);
     }
   };
   
