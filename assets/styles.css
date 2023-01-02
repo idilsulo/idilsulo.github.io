@@ -110,7 +110,7 @@
 
 .darkmode .site-title { font-size: 26px; font-weight: 300; line-height: 54px; letter-spacing: -1px; margin-bottom: 0; float: left; }
 
-.darkmode .site-title, .site-title:visited { color: #eeeeee; }
+.darkmode .site-title, .darkmode .site-title:visited { color: #eeeeee; }
 
 .darkmode .site-nav .page-link { color: #eeeeee; line-height: 1.5; }
 
