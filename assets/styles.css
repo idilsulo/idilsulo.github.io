@@ -24,9 +24,9 @@
 
 .post-title p {font-size: small;}
 
-.post-link { float: left; margin-right: 2em; margin-top: 1em;  margin-bottom: 1em; font-size: large;}
+.post-link { float: left; margin-right: 2em; margin-top: 1px;  margin-bottom: 1em; font-size: large;}
 
-.post-info img { float: left; width: 170px; height: 170px; margin-right: 2em;}
+.post-info img { float: left; width: 180px; height: 180px; margin-right: 2em;}
 
 .post-info .post-paper { font-size: small;}
 
@@ -108,7 +108,7 @@ table th { background-color: #f0f0f0; border: 1px solid #dedede; border-bottom-c
 table td { border: 1px solid #e8e8e8; }
 
 /** Site header */
-.site-header { border-top: 5px solid #eeeeee; border-bottom: 1px solid #eeeeee; min-height: 55.95px; position: relative; }
+.site-header { border-top: 5px solid #639f95; border-bottom: 1px solid #eeeeee; min-height: 55.95px; position: relative; }
 
 .site-title { font-size: 26px; font-weight: 300; line-height: 54px; letter-spacing: -1px; margin-bottom: 0; float: left; }
 
@@ -133,7 +133,7 @@ table td { border: 1px solid #e8e8e8; }
 
 .contact-list, .social-media-list { list-style: none; margin-left: 0; }
 
-.footer-col-wrapper { font-size: 15px; color: #828282; margin-left: -15px; }
+.footer-col-wrapper { font-size: 15px; color: #eeeeee; margin-left: -15px; }
 
 .footer-col { float: left; margin-bottom: 15px; padding-left: 15px; }
 
@@ -158,6 +158,6 @@ table td { border: 1px solid #e8e8e8; }
 
 .post-list > li { margin-bottom: 30px; }
 
-.post-meta { font-size: 14px; color: #828282; }
+.post-meta { font-size: 14px; color: #eeeeee; }
 
 .post-link { display: block; font-size: 24px; }
