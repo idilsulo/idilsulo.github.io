@@ -187,3 +187,6 @@ body {
 
 /** Page content */
 .darkmode .post-meta { font-size: 14px; color: #eeeeee; }
+
+
+@media screen and (max-width: 600px) { .darkmode .site-nav { position: absolute; top: 9px; right: 15px; background-color: #171718; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; } .darkmode .site-nav label[for="nav-trigger"] { display: block; float: right; width: 36px; height: 36px; z-index: 2; cursor: pointer; } .darkmode .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; } .darkmode .site-nav .menu-icon > svg { fill: #eeeeee; } .site-nav input ~ .trigger { clear: both; display: none; } .darkmode .site-nav input:checked ~ .trigger { display: block; padding-bottom: 5px; } .darkmode .site-nav .page-link { display: block; padding: 5px 10px; margin-left: 20px; } .darkmode .site-nav .page-link:not(:last-child) { margin-right: 0; } }
