@@ -4,22 +4,39 @@ body {
     display: flex; min-height: 100vh; flex-direction: column;
 }
 
-.bio-wrapper { display: flex;}
+.bio-wrapper { 
+    display: block;
+    /* position: relative; */
+}
 
-.bio-wrapper p { margin-top: 1em; }
+.bio-wrapper p { 
+    display: block;
+    margin-top: 1em;
+    position: relative;
+}
+
+.bio-social {
+    display: block;
+    margin-top: 1em;
+    float: left;
+    font: 200 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 
 @media screen and (max-width:990px) {
     .bio-wrapper { flex-wrap: wrap;  }
+    .bio-wrapper p { float: inline-end;  }
     .item:first-child { flex-basis: 100%; }
+    
 }
 
-.bio-wrapper img { float: left; width: 300px; height: 300px; margin-right: 2em;}
+
+.bio-wrapper img { float: left; width: 300px; height: 300px; margin-right: 2em; display: inline-block;}
 
 .social-media { position: relative; display: flexbox;}
 
-.content-wrapper { position: relative; margin-top: 3em;}
+.content-wrapper { position: relative; margin-top: 3em; display: block; float: inline-end;}
 
-.publications-wrapper { margin-top: 3em; }
+.publications-wrapper { margin-top: 3em; position: relative; display: block; float: inline-end;}
 
 .post-info { position: relative; display: flex; margin-bottom: 2em;}
 
