@@ -16,4 +16,4 @@ To test this theme on your local, run:
 bundle exec jekyll serve
 ```
 
-Then, open yoour browser at `http://localhost:4000`.
+Then, open your browser at `http://localhost:4000`.
