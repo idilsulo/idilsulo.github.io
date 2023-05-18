@@ -8,6 +8,7 @@ layout: home
 
 ## News
 
+[May 2023] I am the team lead of Events Organization team at Women in CS @ TUM (Informatik-Forum Frauen, IFF).
 [Jan. 2023] Our work titled Learning Vision Based Autonomous Lateral Vehicle Control without Supervision had been accepted to Applied Intelligence. <br/>
 [Dec. 2022] We received our certificates for our participation to the Grace Hopper Celebration (GHC) at TUM Award Ceremony 2022. <br/>
 <p style="text-align:center;"><img src="/images/tum_preisverleihung_2022.jpg" alt="IFF Gender & Diversity Awards" width="400"/></p>
