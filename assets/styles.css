@@ -44,15 +44,15 @@ body {
     .item:first-child { flex-basis: 100%; }
 }
 
-.post-title p {font-size: small;}
+.post-title p {font-size: 15px; letter-spacing: normal;}
 
-.post-link { float: left; margin-right: 2em; margin-top: 1px;  margin-bottom: 1em; font-size: large;}
+.post-link { margin-right: 2em; margin-top: 10px;  margin-bottom: 1em; font-size: large; letter-spacing: normal;}
 
 .post-info img { float: left; width: 180px; height: 180px; margin-right: 2em;}
 
-.post-info .post-paper { font-size: small;}
+.post-info .post-paper { font-size: 15px; letter-spacing: normal;}
 
-.post-place { font-style: italic; }
+.post-place { font-size: 15px; letter-spacing: normal;}
 
 
 .site-header { border-top: 5px solid #1756a9; }
