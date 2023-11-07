@@ -8,7 +8,7 @@ layout: home
 
 ## News
 
-[Oct. 2023] I am actively looking for PhD positions! <br/>
+[Oct. 2023] I am actively looking for PhD positions! ✨<br/>
 [Oct. 2023] I submitted my master's thesis! 🎉 <br/>
 [May. 2023] I am the team lead of Events Organization team at Women in CS @ TUM (Informatik-Forum Frauen, IFF). <br/>
 [Jan. 2023] Our work titled Learning Vision Based Autonomous Lateral Vehicle Control without Supervision had been accepted to Applied Intelligence. <br/>

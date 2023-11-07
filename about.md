@@ -10,7 +10,7 @@ a master's student in Informatics (Computer Science) at <a href="https://www.tum
 I previously obtained my bachelor's in Computer Engineering from <a href="https://ceng.metu.edu.tr/">Middle East Technical University (METU/ODTÜ)</a>, Ankara. 
 My interests broadly include computer vision and deep learning. 
 
-Through my master's degree, I had the chance to work on self-supervised vehicle control at <a href="https://cvg.cit.tum.de/">TUM Computer Vision Group</a> under <a href="https://cvg.cit.tum.de/members/cremers">Prof. Daniel Cremers</a>. Additionally, I pursued my master's thesis titled "Compositional Zero-shot Point Cloud Classification with Vision-Language Model Embeddings" at <a href="https://www.cs.cit.tum.de/en/camp/">TUM CAMP Chair</a> under the supervision of <a href="https://www.cs.cit.tum.de/camp/members/senior-research-scientists/federico-tombari/">PD Dr. Federico Tombari</a>.
+Through my master's degree, I had the chance to work on self-supervised vehicle control at <a href="https://cvg.cit.tum.de/">TUM Computer Vision Group</a> under <a href="https://cvg.cit.tum.de/members/cremers">Prof. Daniel Cremers</a>. Additionally, I completed my master's thesis titled "Compositional Zero-shot Point Cloud Classification with Vision-Language Model Embeddings" at <a href="https://www.cs.cit.tum.de/en/camp/">TUM CAMP Chair</a> under the supervision of <a href="https://www.cs.cit.tum.de/camp/members/senior-research-scientists/federico-tombari/">PD Dr. Federico Tombari</a>.
 
 In my free time, I like reading books, cycling and blogging:
 
