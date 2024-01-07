@@ -5,7 +5,28 @@ This is the source code to my personal website on https://idilsulo.github.io.
 
 Feel free to clone & adapt this repository for your own use.
 
-Please make sure to remove / change the analytics tags as you would not want them on your own website.
+### Important
+
+Please make sure to **remove the analytics tags** as you would not want them on your own website. 
+
+When using this repository for your own purposes, remove the following code segment from `head.html`:
+
+```
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E559NMEVTK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E559NMEVTK');
+  </script>
+  <script>
+      if (localStorage.getItem('color-theme') === 'darkmode' || (!('color-theme' in localStorage))) {
+        localStorage.setItem('color-theme', 'darkmode');
+      }
+  </script>
+```
 
 ## Setup
 
