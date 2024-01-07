@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Idil Sülo
+title: Idil Sulo
 email: idilsulo@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hi! I'm Idil, a recent master's graduate in Informatics (Computer Science) at <a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a>.
@@ -32,7 +32,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: codingwoman
 github_username:  idilsulo
 
-user: Idil Sülo
+user: Idil Sulo
 picture: https://raw.githubusercontent.com/idilsulo/idilsulo.github.io/master/img/photo.png'
 
 
@@ -42,7 +42,7 @@ plugins:
   - jekyll-feed
 
 # Google Analytics
-google_analytics: G-HD8XMF7G1E
+google_analytics: G-E559NMEVTK
 
 # minima:
 #   skin: dark
