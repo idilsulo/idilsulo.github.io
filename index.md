@@ -4,11 +4,12 @@
 
 title: Home
 layout: home
----
+--- 
 
 ## News
 
-[Oct. 2023] I am actively looking for PhD positions! ✨<br/>
+[Feb. 2024] I am **actively looking and interviewing for Ph.D.** positions. Feel free to contact me if you know of a position where I might be a good fit. ✨<br/>
+[Feb. 2024] I am now a Computer Vision Engineer Intern at Deltia.<br/>
 [Oct. 2023] I submitted my master's thesis! 🎉 <br/>
 [May. 2023] I am the team lead of Events Organization team at Women in CS @ TUM (Informatik-Forum Frauen, IFF). <br/>
 [Jan. 2023] Our work titled Learning Vision Based Autonomous Lateral Vehicle Control without Supervision had been accepted to Applied Intelligence. <br/>
