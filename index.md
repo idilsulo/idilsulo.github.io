@@ -8,7 +8,8 @@ layout: home
 
 ## News
 
-[Feb. 2024] I am **actively looking and interviewing for Ph.D.** positions. Feel free to contact me if you know of a position where I might be a good fit. ✨<br/>
+[Mar. 2024] I am **actively looking and interviewing for Ph.D.** positions. Feel free to contact me if you know of a position where I might be a good fit. ✨<br/>
+[Mar. 2024] I have been accepted to [MIT Summer Geometry Initiative](https://sgi.mit.edu/) as an SGI Fellow. <br/>
 [Feb. 2024] I am now a Computer Vision Engineer Intern at Deltia.<br/>
 [Oct. 2023] I submitted my master's thesis! 🎉 <br/>
 [May. 2023] I am the team lead of Events Organization team at Women in CS @ TUM (Informatik-Forum Frauen, IFF). <br/>
