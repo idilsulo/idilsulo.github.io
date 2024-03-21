@@ -22,5 +22,5 @@ layout: home
 [Apr. 2022] I am an organizational member / IFF Officer of Women in CS @ TUM (Informatik-Forum Frauen, IFF) at social media team. <br/>
 [Jun. 2021] I am an SDE intern at Amazon, AWS AI-DevOps team from August, 2021 until January, 2022. <br/>
 
-## On-going Projects 
-* <b>Master's Thesis:</b> Compositional Zero-shot Point Cloud Classification with Vision-Language Model (VLM) Embeddings
+<!-- ## On-going Projects 
+* <b>Master's Thesis:</b> Compositional Zero-shot Point Cloud Classification with Vision-Language Model (VLM) Embeddings -->
