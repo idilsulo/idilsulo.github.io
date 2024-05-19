@@ -6,24 +6,26 @@ layout: default
     <h1>Research / <a href="https://scholar.google.com/citations?user=_WKcP38AAAAJ&hl=en">Google Scholar</a></h1>
     
     {% for post in site.posts %}
-        <div class="post-info">
-            <img src="{{ post.image }}" alt="" />
-            <div class="post-title">
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                <p> {{ post.authors }} </p>
-                <p class="post-place"> {{ post.place }} </p>
-                <div class="post-paper">
-                    {% if post.paper %}   
-                        <a href="{{ post.paper | prepend: site.baseurl }}">[paper]</a>
-                    {% endif %}
-                    {% if post.arxiv %} 
-                        <a href="{{ post.arxiv | prepend: site.baseurl }}">[arxiv]</a>
-                    {% endif %}
-                    {% if post.code %} 
-                        <a href="{{ post.code | prepend: site.baseurl }}">[code]</a>
-                    {% endif %}
+        {% if post.article %}
+            <div class="post-info">
+                <img src="{{ post.image }}" alt="" />
+                <div class="post-title">
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    <p> {{ post.authors }} </p>
+                    <p class="post-place"> {{ post.place }} </p>
+                    <div class="post-paper">
+                        {% if post.paper %}   
+                            <a href="{{ post.paper | prepend: site.baseurl }}">[paper]</a>
+                        {% endif %}
+                        {% if post.arxiv %} 
+                            <a href="{{ post.arxiv | prepend: site.baseurl }}">[arxiv]</a>
+                        {% endif %}
+                        {% if post.code %} 
+                            <a href="{{ post.code | prepend: site.baseurl }}">[code]</a>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
-        </div>
+        {% endif %}
     {% endfor %}
 </div>

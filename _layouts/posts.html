@@ -1,0 +1,75 @@
+---
+layout: archive
+---
+<script>
+  function postDisplayFunction() {
+    $(".old-posts").css({ 'display' : 'block'});
+    $(".load-more").css({ 'display' : 'none'});
+  }
+</script>
+
+{{ content }}
+
+<ul class="taxonomy__index">
+  {% assign postsInYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% for year in postsInYear %}
+    {% if year.name != '2018' %}
+    <div class="taxonomy__index_div">
+      <li class="taxonomy__index_li">
+        <a href="#{{ year.name }}">
+          <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
+        </a>
+      </li>
+    </div>
+    {% else %}
+    <div class="taxonomy__index_div">
+      <li class="taxonomy__index_li">
+        <a href="#{{ year.name }}" onclick="postDisplayFunction()">
+          <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
+        </a>
+      </li>
+    </div>
+    {% endif %}
+  {% endfor %}
+</ul>
+<br/><br/>
+<br/><br/><br/><br/><br/>
+
+{% assign entries_layout = page.entries_layout | default: 'grid' %}
+{% assign postsByYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+{% for year in postsByYear %}
+  {% if year.name != '2018' %}
+  <section id="{{ year.name }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ year.name }}</h2>
+    <div class="entries-{{ entries_layout }}">
+      {% for post in year.items %}
+        {% include blog-single.html type=entries_layout %}
+      {% endfor %}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+  <br/>
+  <br/>
+  {% endif %}
+{% endfor %}
+
+
+<a class="load-more" onclick="postDisplayFunction()">Load More ✨</a>
+
+<div class="old-posts">
+{% for year in postsByYear %}
+  {% if year.name == '2018' %}
+  <section id="{{ year.name }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ year.name }}</h2>
+    <div class="entries-{{ entries_layout }}">
+      {% for post in year.items %}
+        {% include blog-single.html type=entries_layout %}
+      {% endfor %}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+  <br/>
+  <br/>
+  {% endif %}
+{% endfor %}
+</div>

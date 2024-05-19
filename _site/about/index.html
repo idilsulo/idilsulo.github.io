@@ -14,6 +14,7 @@
         localStorage.setItem('color-theme', 'darkmode');
       }
   </script>  
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,6 +46,10 @@
 {"@context":"https://schema.org","@type":"WebSite","description":"Hi! I’m Idil, a recent master’s graduate in Informatics (Computer Science) at Technical University of Munich (TUM). I previously obtained my bachelor’s in Computer Engineering from Middle East Technical University (METU), Ankara. My interests broadly include computer vision and deep learning. Through my master’s degree, I worked on self-supervised vehicle control at TUM Computer Vision Group under Prof. Daniel Cremers. I completed my master’s thesis on zero-shot learning and 3D object part understanding at TUM CAMP Chair under PD Dr. Federico Tombari.","headline":"About","name":"Idil Sulo","url":"http://localhost:4000/about/"}</script>
 <!-- End Jekyll SEO tag -->
 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <!-- Favicon head tag -->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -131,7 +136,7 @@
       <div class="wrapper">
         <h2 id="hi-im-idil">Hi! I’m Idil,</h2>
 
-<p>a master’s student in Informatics (Computer Science) at <a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a>.
+<p>a master’s student in Computer Science (Informatics) at <a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a>.
 I previously obtained my bachelor’s in Computer Engineering from <a href="https://ceng.metu.edu.tr/">Middle East Technical University (METU/ODTÜ)</a>, Ankara. 
 My interests broadly include computer vision and deep learning. Specifically, my research interests lie in 2D/3D computer vision, 3D object &amp; scene understanding, multimodal learning and deep learning with minimal supervision.</p>
 
@@ -143,7 +148,7 @@ My interests broadly include computer vision and deep learning. Specifically, my
 
 <p>📚 Too many books, too little time! Lately, I came to the realization that even if I read 20 books every year, I can only finish 1000 books in 50 years which is a very little number when you think about all the books that you can find in a library. So, I started to read as regularly as I can. You can follow my recent books and reading challenges on <a href="https://www.goodreads.com/codingwoman">Goodreads</a>.</p>
 
-<p>👩‍💻 Blogging is one of the things that motivates me the most to continue what I have been doing whether it be research, work or my hobbies. However, I find my Wordpress setup to be more organized and customizable, so I keep my blog on a separate domain. Feel free to visit my blog <a href="http://www.codingwoman.com">Coding Woman</a>!</p>
+<p>👩‍💻 Blogging is one of the things that motivates me the most to continue what I have been doing whether it be research, work or my hobbies. However, I find my Wordpress setup to be more organized and customizable, so I keep my blog on a separate domain. Feel free to visit my blog <a href="http://www.codingwoman.com">Coding Woman</a>.</p>
 
 
 
@@ -197,5 +202,8 @@ My interests broadly include computer vision and deep learning. Specifically, my
     </div>
   
   </footer></body>
+  <script>
+    document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getElementsByTagName("body")[0].innerHTML)
+  </script>
 
 </html>

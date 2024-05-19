@@ -14,6 +14,7 @@
         localStorage.setItem('color-theme', 'darkmode');
       }
   </script>  
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,6 +46,10 @@
 {"@context":"https://schema.org","@type":"WebSite","description":"Hi! I’m Idil, a recent master’s graduate in Informatics (Computer Science) at Technical University of Munich (TUM). I previously obtained my bachelor’s in Computer Engineering from Middle East Technical University (METU), Ankara. My interests broadly include computer vision and deep learning. Through my master’s degree, I worked on self-supervised vehicle control at TUM Computer Vision Group under Prof. Daniel Cremers. I completed my master’s thesis on zero-shot learning and 3D object part understanding at TUM CAMP Chair under PD Dr. Federico Tombari.","headline":"Home","name":"Idil Sulo","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <!-- Favicon head tag -->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -151,6 +156,7 @@
 <strong>[Apr. 2024]</strong> I gave a talk on “Learning Vision Based Autonomous Lateral Vehicle Control without Supervision” with <a href="https://basakmelisocal.github.io/">Melis Ocal</a> to ATS Research group at Scania. <br />
 <strong>[Mar. 2024]</strong> I have been accepted to <a href="https://sgi.mit.edu/">MIT Summer Geometry Initiative</a> as an SGI Fellow. <br />
 <strong>[Feb. 2024]</strong> I am now a Computer Vision Engineer Intern at Deltia.<br />
+<strong>[Jan. 2024]</strong> I served as a reviewer for CVPR 2024.<br />
 <strong>[Oct. 2023]</strong> I submitted my master’s thesis! 🎉 <br /></p>
 
 <!-- [May. 2023] I am the team lead of Events Organization team at Women in CS @ TUM (Informatik-Forum Frauen, IFF). <br/>
@@ -175,7 +181,7 @@
         <div class="post-info">
             <img src="/images/thesis.png" alt="" />
             <div class="post-title">
-                <a class="post-link" href="/computer-vision/deep-learning/2023/10/13/thesis.html">Master's Thesis － Compositional Zero-shot Point Cloud Classification with Vision-Language Model (VLM) Embeddings</a>
+                <a class="post-link" href="/research/2023/10/13/thesis.html">Master's Thesis － Compositional Zero-shot Point Cloud Classification with Vision-Language Model (VLM) Embeddings</a>
                 <p> <u><b>Idil Sulo</b></u> </p>
                 <p class="post-place"> Technical University of Munich, 2023 </p>
                 <div class="post-paper">
@@ -191,7 +197,7 @@
         <div class="post-info">
             <img src="/images/nn-driving.png" alt="" />
             <div class="post-title">
-                <a class="post-link" href="/computer-vision/deep-learning/2023/02/25/nn-driving.html">Learning vision based autonomous lateral vehicle control without supervision</a>
+                <a class="post-link" href="/research/2023/02/25/nn-driving.html">Learning vision based autonomous lateral vehicle control without supervision</a>
                 <p> Qadeer Khan, <u><b>Idil Sülö</b></u>, Melis Öcal & Daniel Cremers </p>
                 <p class="post-place"> Applied Intelligence, Springer, 2023 </p>
                 <div class="post-paper">
@@ -209,7 +215,7 @@
         <div class="post-info">
             <img src="/images/alet.png" alt="" />
             <div class="post-title">
-                <a class="post-link" href="/computer-vision/2022/10/23/alet.html">ALET (Automated Labeling of Equipment and Tools): A Dataset for Tool Detection and Human Worker Safety Detection</a>
+                <a class="post-link" href="/research/2022/10/23/alet.html">ALET (Automated Labeling of Equipment and Tools): A Dataset for Tool Detection and Human Worker Safety Detection</a>
                 <p> Fatih Can Kurnaz, Burak Hocaoğlu, Mert Kaan Yılmaz, <u><b>İdil Sülo</b></u> & Sinan Kalkan </p>
                 <p class="post-place"> European Conference on Computer Vision (ECCV) 2020 Workshops </p>
                 <div class="post-paper">
@@ -229,7 +235,7 @@
         <div class="post-info">
             <img src="/images/energy.jpg" alt="" />
             <div class="post-title">
-                <a class="post-link" href="/deep-learning/2019/08/26/cuny.html">Energy Efficient Smart Buildings: LSTM Neural Networks for Time Series Prediction</a>
+                <a class="post-link" href="/research/2019/08/26/cuny.html">Energy Efficient Smart Buildings: LSTM Neural Networks for Time Series Prediction</a>
                 <p> <u><b>İdil Sülo</b></u>, Seref Recep Keskin, Gülüstan Dogan & Theodore Brown </p>
                 <p class="post-place"> International Conference on Deep Learning and Machine Learning in Emerging Applications (Deep-ML), 2019 </p>
                 <div class="post-paper">
@@ -293,5 +299,8 @@
     </div>
   
   </footer></body>
+  <script>
+    document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getElementsByTagName("body")[0].innerHTML)
+  </script>
 
 </html>
