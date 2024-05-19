@@ -5,10 +5,11 @@ place: Applied Intelligence, Springer, 2023
 authors: Qadeer Khan, <u><b>Idil Sülö</b></u>, Melis Öcal & Daniel Cremers 
 date:   2023-02-25 12:00:00 +0200
 image: /images/nn-driving.png
-categories: computer-vision deep-learning
+article: True
 paper: https://link.springer.com/article/10.1007/s10489-023-04478-8
 arxiv:
 code: https://github.com/idilsulo/nn-driving/
+category: Research
 ---
 
 ![](/images/nn-driving.png)

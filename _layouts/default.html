@@ -16,5 +16,8 @@
     {%- include footer.html -%}
 
   </body>
+  <script>
+    document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getElementsByTagName("body")[0].innerHTML)
+  </script>
 
 </html>

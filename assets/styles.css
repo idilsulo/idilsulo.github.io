@@ -1,5 +1,124 @@
+.old-posts {
+    display: none;
+}
+
+.archived-category {
+    display: none;
+}
+
+
+/* Search page */
+#search-input {
+    font-size: 30px;
+    display: block;
+    width: 400px
+}
+
+
+h1 {
+    font-size: 30px;
+}
+
+/* h1 h2 h3 h4 h5 h6 h7 {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+} */
+
+/* Youtube video embed */
+iframe {
+    width: 560px; 
+    height: 315px;
+}
+
+@media screen and (max-width:990px) {
+    iframe {
+        width: 300px; 
+        height: 140px;
+    }
+    
+}
+
+/* Emoji size */
+img.emoji {
+    height: 1.1em;
+    width: 1.1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+ }
+ 
+.taxonomy__index_li {
+    list-style-type: none;
+    font-size: 14px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.taxonomy {
+    display: block;
+    margin-bottom: 15px;
+    overflow: hidden;
+    margin:0 auto;
+    overflow: auto;
+    clear: both;
+}
+
+.taxonomy__index_div {
+    float: left;
+    width: 50%;
+}
+
+.taxonomy {
+    display: block;
+}
+.archive__subtitle {
+    margin-top: 40px;
+}
+
+.archive__item-teaser  {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    width: 100px;
+}
+
+/* .archive__item-title {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: block;
+} */
+
+@media screen and (max-width:990px) {
+    .archive-title {
+        display: inline-block;
+        width: 50%;
+    }   
+}
+
+.entries-grid {
+    display: inline-block; 
+    margin-bottom: 10px;
+}
+
+.archive__item {
+    width: 100%;
+    display: inline-block; 
+    margin-bottom: 10px;
+}
+
+.archive__item img {
+    display: block; 
+    margin-bottom: 15px;
+}
+
+.entries-grid {
+    width: 100%;
+}
+
 body {
-    font: 200 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+    font: 200 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
     -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; 
     display: flex; min-height: 100vh; flex-direction: column;
 }
@@ -18,7 +137,7 @@ body {
 #bio-social {
     /* float: left;  */
     text-align: left;
-    font: 200 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font: 200 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 @media screen and (max-width:990px) {
@@ -28,6 +147,9 @@ body {
     
 }
 
+.wrapper {
+    padding-right: 30px; padding-left: 30px;
+}
 
 .bio-wrapper img { float: left; width: 300px; height: 300px; margin-right: 2em; display: inline-block;}
 
@@ -59,13 +181,15 @@ body {
 
 .footer-horizontal { float: left; margin-top: 1em; font-size: 13px;}
 
+
 /* TOGGLE */
-.toggle {
+.darkmode .toggle {
+    font-size: 18px;
     margin-top: 12px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 62px;
+    width: 32px;
     height: 32px;
     display: inline-block;
     position: relative;
@@ -74,40 +198,53 @@ body {
     outline: none;
     border: none;
     cursor: pointer;
-    background-color: #707070;
-    transition: background-color ease 0.15s; /* 0.3s; */
+    content: "✨";
+    background-color: #639f95;
+    transition: background-color ease 0.1s;
+    float: left;
+}
+
+.darkmode .toggle:before {
+    content: "✨";
+    background-color: #639f95;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 9px;
+    top: 6px;
+    transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.1s;
+}
+
+
+.toggle {
+    margin-top: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    content: "🌙";
+    background-color: #1756a9;
+    transition: background-color ease 0.1s;
     float: left;
 }
   
 .toggle:before {
-    content: "🌙 ☀️";
+    content: "🌙";
+    background-color: #1756a9;
     display: block;
     position: absolute;
     z-index: 2;
-    width: 28px;
-    height: 28px;
-    background: #fff;
-    left: 2px;
-    top: 2px;
-    border-radius: 50%;
-    font: 15px/28px Helvetica;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-indent: -22px;
-    word-spacing: 37px;
-    color: #fff;
-    text-shadow: -1px -1px rgba(0,0,0,0.15);
-    white-space: nowrap;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-    transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.15s; /* 0.3s; */
-}
-  
-.toggle:checked {
-    background-color: #639f95;
-}
-  
-.toggle:checked:before {
-    left: 32px;
+    left: 6px;
+    top: 6px;
+    transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.1s;
 }
 
 .site-title { font-size: 26px; font-weight: 300; line-height: 54px; letter-spacing: 0px; margin-bottom: 0; float: left; margin-left: 5px;}
@@ -121,39 +258,71 @@ body {
 
 
 .darkmode body {
-    font: 200 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+    font: 200 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
     color: #cccccc; 
     background-color: #171718; -webkit-text-size-adjust: 100%; 
     -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; 
     display: flex; min-height: 100vh; flex-direction: column;
 }
 
-.darkmode p, .darkmode li {
+.darkmode p, .darkmode li, .darkmode b, .darkmode span {
     color: #cccccc;
 }
 
-/** Headings */
-.darkmode h1, .darkmode h2, .darkmode h3, .darkmode h4, .darkmode h5, .darkmode h6 { 
-    color: #ffffff;
-    font-weight: 200; 
+.darkmode code {
+    color: #111;;
 }
 
+/* .darkmode code {
+    background-color: #333941;
+    border-color: #333941;
+    color: #c1cad2;;
+} */
+
+/** Headings */
+.darkmode h1, .darkmode h2, .darkmode h3, .darkmode h4, .darkmode h5, .darkmode h6 .darkmode h7 { 
+    color: #cccccc;
+}
+
+/* .post h1, .post h2, .post h3, .post h4, .post h5, .post h6, .post h7 {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+} */
 /** Links */
 .darkmode a { color: #eeeeee; text-decoration: none; }
 
-.darkmode a:visited { color: #eeeeee; }
+/* .darkmode a:visited { color: #eeeeee; } */
 
-.darkmode a:hover { color: #639f95; text-decoration: underline; }
+/* .darkmode a:hover { color: #7da09a; text-decoration: underline; } */
+.darkmode a:hover { color: #eeeeee; text-decoration: underline; }
 
 .darkmode .social-media-list a:hover { text-decoration: none; }
 
 .darkmode .social-media-list a:hover .username { text-decoration: underline; }
 
 /** Blockquotes */
-.darkmode blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; }
+
+blockquote {
+    font-style: normal;
+	color: #454545;
+	opacity: 1.0;
+	text-transform: inherit;
+	width: 88%;
+	border: 1px solid;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-left-width: 4.5px;
+	padding: 10px 20px;
+	box-shadow: 1px 1px 1px;
+}
+blockquote .p {
+    color: #454545;
+    letter-spacing: 2px;
+}
+.darkmode blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; }
 
 .darkmode blockquote > :last-child { margin-bottom: 0; }
-
 /** Code formatting */
 .darkmode pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
 
@@ -206,3 +375,4 @@ body {
 
 
 @media screen and (max-width: 600px) { .darkmode .site-nav { position: absolute; top: 9px; right: 15px; background-color: #171718; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; z-index: 999;} .darkmode .site-nav label[for="nav-trigger"] { display: block; float: right; width: 36px; height: 36px; z-index: 2; cursor: pointer; } .darkmode .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; } .darkmode .site-nav .menu-icon > svg { fill: #eeeeee; } .site-nav input ~ .trigger { clear: both; display: none; } .darkmode .site-nav input:checked ~ .trigger { display: block; padding-bottom: 5px; } .darkmode .site-nav .page-link { display: block; padding: 5px 10px; margin-left: 20px; } .darkmode .site-nav .page-link:not(:last-child) { margin-right: 0; } }
+

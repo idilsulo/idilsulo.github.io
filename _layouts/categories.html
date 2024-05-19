@@ -1,0 +1,90 @@
+---
+layout: archive
+---
+<script>
+  function postDisplayFunction() {
+    $(".archived-category").css({ 'display' : 'block'});
+  }
+</script>
+
+{{ content }}
+
+{% assign categories_max = 0 %}
+{% for category in site.categories %}
+  {% if category[1].size > categories_max %}
+    {% assign categories_max = category[1].size %}
+  {% endif %}
+{% endfor %}
+
+<div class="taxonomy">
+<ul class="taxonomy__index">
+  {% for i in (1..categories_max) reversed %}
+    {% for category in site.categories %}
+      {% if category[1].size == i and category[0] != 'Research' %}
+        {% if category[0] != 'Archive 🔒' %}
+          <div class="taxonomy__index_div">
+            <li class="taxonomy__index_li">
+              <a href="#{{ category[0] | slugify }}">
+                <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+              </a>
+            </li>
+          </div>
+        {% else' %}
+          <div class="taxonomy__index_div">
+            <li class="taxonomy__index_li">
+              <a onclick="postDisplayFunction()" href="#{{ category[0] | slugify }}">
+                <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+              </a>
+            </li>
+          </div>
+          {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>
+</div>
+
+
+{% assign entries_layout = page.entries_layout | default: 'grid' %}
+{% for i in (1..categories_max) reversed %}
+  {% for category in site.categories %}
+    {% if category[1].size == i and category[0] != 'Research' and category[0] != 'Archive 🔒' %}
+    <br/>
+      <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
+        <div>
+        <h2 class="archive__subtitle">{{ category[0] }}</h2>
+        <div class="entries-{{ entries_layout }}">
+          {% for post in category.last %}
+            {% include archive-single.html type=entries_layout %}
+          {% endfor %}
+        </div>
+        </div>
+        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+      </section>
+      <br/><br/>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% for c in site.categories %}
+  {% if c[0] == 'Archive 🔒' %}
+    {% assign category = c %}
+  {% endif %}
+{% endfor %}
+
+<div class="archived-category">
+<br/>
+  <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section achive">
+    <div>
+    <h2 class="archive__subtitle">{{ category[0] }}</h2>
+    <div class="entries-{{ entries_layout }}">
+      {% for post in category.last %}
+        {% include archive-single.html type=entries_layout %}
+      {% endfor %}
+    </div>
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+</div>
+  <br/>
+  <br/>
