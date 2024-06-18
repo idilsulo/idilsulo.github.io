@@ -8,14 +8,15 @@ layout: home
 
 ## News
 
-**[May. 2024]** I am **actively looking and interviewing for Ph.D.** positions. Feel free to contact me if you know of a position where I might be a good fit. 📩<br/>
 **[Apr. 2024]** I gave a talk on "Learning Vision Based Autonomous Lateral Vehicle Control without Supervision" with [Melis Ocal](https://basakmelisocal.github.io/) to ATS Research group at Scania. <br/>
 **[Mar. 2024]** I have been accepted to [MIT Summer Geometry Initiative](https://sgi.mit.edu/) as an SGI Fellow. <br/>
 **[Feb. 2024]** I am now a Computer Vision Engineer Intern at Deltia.<br/>
 **[Jan. 2024]** I served as a reviewer for CVPR 2024.<br/>
 **[Oct. 2023]** I submitted my master's thesis! 🥂 <br/>
 
-<!-- [May. 2023] I am the team lead of Events Organization team at Women in CS @ TUM (Informatik-Forum Frauen, IFF). <br/>
+<!-- 
+**[May. 2024]** I am **actively looking and interviewing for Ph.D.** positions. Feel free to contact me if you know of a position where I might be a good fit. 📩<br/>
+[May. 2023] I am the team lead of Events Organization team at Women in CS @ TUM (Informatik-Forum Frauen, IFF). <br/>
 [Jan. 2023] Our work titled Learning Vision Based Autonomous Lateral Vehicle Control without Supervision had been accepted to Applied Intelligence. <br/>
 [Dec. 2022] We received our certificates for our participation to the Grace Hopper Celebration (GHC) at TUM Award Ceremony 2022. <br/>
 <p style="text-align:center;"><img src="/images/tum_preisverleihung_2022.jpg" alt="IFF Gender & Diversity Awards" width="400"/></p>
