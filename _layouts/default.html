@@ -17,7 +17,11 @@
 
   </body>
   <script>
-    document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getElementsByTagName("body")[0].innerHTML)
+    // Maxcdn drops twemoji support - here is the alternative
+    twemoji.parse(
+      document.body,
+      { base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/' }
+    )
   </script>
 
 </html>
