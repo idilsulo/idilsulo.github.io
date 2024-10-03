@@ -8,8 +8,9 @@ layout: home
 
 ## News
 
+**[Sep. 2024]** I served as a reviewer at Program Committee at [AAAI 2025](https://aaai.org/conference/aaai/aaai-25/). <br/>
+**[Aug. 2024]** I participated in [MIT Summer Geometry Initiative](https://sgi.mit.edu/sgi-fellows/sgi-2024-fellows/) as an SGI Fellow. <br/>
 **[Apr. 2024]** I gave a talk on "Learning Vision Based Autonomous Lateral Vehicle Control without Supervision" with [Melis Ocal](https://basakmelisocal.github.io/) to ATS Research group at Scania. <br/>
-**[Mar. 2024]** I have been accepted to [MIT Summer Geometry Initiative](https://sgi.mit.edu/) as an SGI Fellow. <br/>
 **[Feb. 2024]** I am now a Computer Vision Engineer Intern at Deltia.<br/>
 **[Jan. 2024]** I served as a reviewer for CVPR 2024.<br/>
 **[Oct. 2023]** I submitted my master's thesis! 🥂 <br/>
