@@ -110,7 +110,11 @@ img.emoji {
 
 .archive__item img {
     display: block; 
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.archive__item-title a {
+    display: grid;
 }
 
 .entries-grid {
