@@ -14,7 +14,7 @@
         localStorage.setItem('color-theme', 'darkmode');
       }
   </script>  
-  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -152,14 +152,16 @@
 <div class="content-wrapper">
     <h2 id="news">News</h2>
 
-<p><strong>[May. 2024]</strong> I am <strong>actively looking and interviewing for Ph.D.</strong> positions. Feel free to contact me if you know of a position where I might be a good fit. 📩<br />
+<p><strong>[Sep. 2024]</strong> I served as a reviewer at Program Committee at <a href="https://aaai.org/conference/aaai/aaai-25/">AAAI 2025</a>. <br />
+<strong>[Aug. 2024]</strong> I participated in <a href="https://sgi.mit.edu/sgi-fellows/sgi-2024-fellows/">MIT Summer Geometry Initiative</a> as an SGI Fellow. <br />
 <strong>[Apr. 2024]</strong> I gave a talk on “Learning Vision Based Autonomous Lateral Vehicle Control without Supervision” with <a href="https://basakmelisocal.github.io/">Melis Ocal</a> to ATS Research group at Scania. <br />
-<strong>[Mar. 2024]</strong> I have been accepted to <a href="https://sgi.mit.edu/">MIT Summer Geometry Initiative</a> as an SGI Fellow. <br />
 <strong>[Feb. 2024]</strong> I am now a Computer Vision Engineer Intern at Deltia.<br />
 <strong>[Jan. 2024]</strong> I served as a reviewer for CVPR 2024.<br />
 <strong>[Oct. 2023]</strong> I submitted my master’s thesis! 🥂 <br /></p>
 
-<!-- [May. 2023] I am the team lead of Events Organization team at Women in CS @ TUM (Informatik-Forum Frauen, IFF). <br/>
+<!-- 
+**[May. 2024]** I am **actively looking and interviewing for Ph.D.** positions. Feel free to contact me if you know of a position where I might be a good fit. 📩<br/>
+[May. 2023] I am the team lead of Events Organization team at Women in CS @ TUM (Informatik-Forum Frauen, IFF). <br/>
 [Jan. 2023] Our work titled Learning Vision Based Autonomous Lateral Vehicle Control without Supervision had been accepted to Applied Intelligence. <br/>
 [Dec. 2022] We received our certificates for our participation to the Grace Hopper Celebration (GHC) at TUM Award Ceremony 2022. <br/>
 <p style="text-align:center;"><img src="/images/tum_preisverleihung_2022.jpg" alt="IFF Gender & Diversity Awards" width="400"/></p>
@@ -288,13 +290,17 @@
         </div>
       </div>
       <div class="footer-horizontal">
-        <p>© 2024 Idil Sulo  |  Last updated on May 4, 2024. </p>
+        <p>© 2024 Idil Sulo  |  Last updated on October 3, 2024. </p>
       </div> 
     </div>
   
   </footer></body>
   <script>
-    document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getElementsByTagName("body")[0].innerHTML)
+    // Maxcdn drops twemoji support - here is the alternative
+    twemoji.parse(
+      document.body,
+      { base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/' }
+    )
   </script>
 
 </html>

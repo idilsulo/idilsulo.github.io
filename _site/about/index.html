@@ -14,7 +14,7 @@
         localStorage.setItem('color-theme', 'darkmode');
       }
   </script>  
-  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -136,7 +136,7 @@
       <div class="wrapper">
         <h2 id="hi-im-idil">Hi! I’m Idil,</h2>
 
-<p>a master’s student in Computer Science (Informatics) at <a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a>.
+<p>a master’s graduate in Computer Science (Informatics) at <a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a>.
 I previously obtained my bachelor’s in Computer Engineering from <a href="https://ceng.metu.edu.tr/">Middle East Technical University (METU/ODTÜ)</a>, Ankara. 
 My interests broadly include computer vision and deep learning. Specifically, my research interests lie in 2D/3D computer vision, 3D object &amp; scene understanding, multimodal learning and deep learning with minimal supervision.</p>
 
@@ -144,7 +144,7 @@ My interests broadly include computer vision and deep learning. Specifically, my
 
 <p>In my free time, I like reading books, cycling and blogging:</p>
 
-<p>🚴‍♀️ Cycling is one of the things that make me happy the most since my childhood. I participated in bike tours and even a MTB race in the past. Recently, I decided to go back to this good old habit of mine and bought myself a low-cost gravel / road bike. I frequently use <a href="https://www.strava.com/athletes/codingwoman">Strava</a> to log my cycling exercises, so feel free to check it out.</p>
+<p>🚴‍♀️ Cycling is one of the things that make me happy the most since my childhood. I participated in bike tours and even an MTB race in the past. Recently, I decided to go back to this good old habit of mine and bought myself a low-cost gravel bike. I frequently use <a href="https://www.strava.com/athletes/codingwoman">Strava</a> to log my cycling exercises, so feel free to check it out.</p>
 
 <p>📚 Too many books, too little time! Lately, I came to the realization that even if I read 20 books every year, I can only finish 1000 books in 50 years which is a very little number when you think about all the books that you can find in a library. So, I started to read as regularly as I can. You can follow my recent books and reading challenges on <a href="https://www.goodreads.com/codingwoman">Goodreads</a>.</p>
 
@@ -191,13 +191,17 @@ My interests broadly include computer vision and deep learning. Specifically, my
         </div>
       </div>
       <div class="footer-horizontal">
-        <p>© 2024 Idil Sulo  |  Last updated on May 4, 2024. </p>
+        <p>© 2024 Idil Sulo  |  Last updated on October 3, 2024. </p>
       </div> 
     </div>
   
   </footer></body>
   <script>
-    document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getElementsByTagName("body")[0].innerHTML)
+    // Maxcdn drops twemoji support - here is the alternative
+    twemoji.parse(
+      document.body,
+      { base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/' }
+    )
   </script>
 
 </html>
